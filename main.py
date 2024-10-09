@@ -4,6 +4,9 @@ from tkinter import *
 root = Tk("TextEditor")
 root.title('Текстовый редактор ongoing211')
 
+root.rowconfigure(0, minsize=1000, weight=1)
+root.columnconfigure(1, minsize=800, weight=1)
+
 frame_btn = Frame(master=root, width=190, bg='grey')
 txt_edit = Frame(master=root)
 frame_btn.pack(fill=Y, side=LEFT)
